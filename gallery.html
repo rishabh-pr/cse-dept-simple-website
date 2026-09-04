@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Department - Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Dept. of Computer Science &amp; Engineering</h1>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Photo Gallery</h2>
+    <p>Click on any small photo below to see it bigger.</p>
+
+    <div id="bigImageBox">
+      <img id="bigImage" src="images/gallery-1.svg" alt="Orientation Day">
+      <p id="bigCaption">Orientation Day 2026</p>
+    </div>
+
+    <div>
+      <img class="thumbnail" src="images/gallery-1.svg" alt="Orientation Day"
+        onclick="changeImage('images/gallery-1.svg', 'Orientation Day 2026')">
+      <img class="thumbnail" src="images/gallery-2.svg" alt="Hackathon 2025"
+        onclick="changeImage('images/gallery-2.svg', '24-Hour Hackathon 2025')">
+      <img class="thumbnail" src="images/gallery-3.svg" alt="AI Workshop"
+        onclick="changeImage('images/gallery-3.svg', 'AI Workshop')">
+      <img class="thumbnail" src="images/gallery-4.svg" alt="Robotics Lab"
+        onclick="changeImage('images/gallery-4.svg', 'Robotics Lab Session')">
+      <img class="thumbnail" src="images/gallery-5.svg" alt="Tech Fest"
+        onclick="changeImage('images/gallery-5.svg', 'Annual Tech Fest')">
+      <img class="thumbnail" src="images/gallery-6.svg" alt="Guest Lecture"
+        onclick="changeImage('images/gallery-6.svg', 'Guest Lecture on Cloud Computing')">
+      <img class="thumbnail" src="images/gallery-7.svg" alt="Coding Contest"
+        onclick="changeImage('images/gallery-7.svg', 'Inter-College Coding Contest')">
+      <img class="thumbnail" src="images/gallery-8.svg" alt="Graduation Day"
+        onclick="changeImage('images/gallery-8.svg', 'Convocation Day')">
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of CSE, NOT_RV College of Engineering</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

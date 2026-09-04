@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSE Department - Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Dept. of Computer Science &amp; Engineering</h1>
+    <nav>
+      <ul id="navList">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="faculty.html">Faculty</a></li>
+        <li><a href="programs.html">Programs</a></li>
+        <li><a href="timetable.html">Timetable</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contact Us</h2>
+
+    <p>
+      Department of Computer Science &amp; Engineering<br>
+      NOT_RV College of Engineering<br>
+      Block C, Tech Campus Road, Bengaluru 560100<br>
+      Phone: +91 12345 67890<br>
+      Email: cse@NOT_RVCE.edu
+    </p>
+
+    <h2>Send us a Message</h2>
+
+    <div id="formMessage"></div>
+
+    <form id="contactForm" onsubmit="return validateForm()">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name">
+      <span class="error-text" id="nameError"></span>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email">
+      <span class="error-text" id="emailError"></span>
+
+      <label for="subject">Subject</label>
+      <select id="subject" name="subject">
+        <option value="">-- Select a subject --</option>
+        <option value="admissions">Admissions Enquiry</option>
+        <option value="academics">Academic Question</option>
+        <option value="other">Other</option>
+      </select>
+      <span class="error-text" id="subjectError"></span>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5"></textarea>
+      <span class="error-text" id="messageError"></span>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Department of CSE, NOT_RV College of Engineering</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
